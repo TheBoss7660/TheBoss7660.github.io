@@ -1353,7 +1353,7 @@
                         <div class="cert-progress">
                             <div class="progress-label">
                                 <span>Progress</span>
-                                <span>0%</span>
+                                <span>10%</span>
                             </div>
                             <div class="progress-bar">
                                 <div class="progress-fill" style="width: 0%"></div>
@@ -1370,7 +1370,7 @@
                     <div class="path-step">
                         <div class="step-number">1</div>
                         <h4>Foundation</h4>
-                        <p>Python, Statistics, Data Wrangling</p>
+                        <p>Python, Statistics, Data Wrangling, Data Science Methodology</p>
                         <p class="status-badge status-complete" style="margin-top: 10px;">Completed</p>
                     </div>
                     <div class="path-step">
@@ -1382,7 +1382,7 @@
                     <div class="path-step">
                         <div class="step-number">3</div>
                         <h4>Next Steps</h4>
-                        <p>Machine Learning, Advanced Analytics</p>
+                        <p>Machine Learning, Advanced Analytics, Artificial Inteligence</p>
                         <p class="status-badge status-inprogress" style="margin-top: 10px;">In Progress</p>
                     </div>
                     <div class="path-step">
@@ -1406,7 +1406,7 @@
             
             <div class="about-container">
                 <div class="profile-img-container">
-                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=774&q=80" alt="Profile" class="profile-img">
+                    <img src="images/sato_photo.png" alt="John Sato - Aspiring Data Scientist" class="profile-img">
                     <div class="profile-badge">Aspiring Data Scientist</div>
                 </div>
                 
@@ -1414,7 +1414,7 @@
                     <h3>Data Analytics Enthusiast</h3>
                     <p>I'm currently developing my data analytics skills through the IBM Data Science Professional Certificate on Coursera. My focus is on building a strong foundation in data manipulation, visualization, and analysis using Python, Pandas, and SQL.</p>
                     <p>While I'm still early in my data science journey, I'm passionate about transforming raw data into meaningful insights. I enjoy the process of cleaning messy data, exploring patterns, and creating clear visualizations that tell a story.</p>
-                    <p>I'm seeking an attachment/internship opportunity starting February to apply my skills in a real-world setting and continue learning from experienced professionals in the field.</p>
+                    <p>I'm seeking an attachment/internship opportunity to apply my skills in a real-world setting and continue learning from experienced professionals in the field.</p>
                     
                     <div class="about-highlights">
                         <div class="highlight-item">
@@ -1451,7 +1451,7 @@
                         <a href="#contact" class="btn btn-primary">
                             <i class="fas fa-paper-plane"></i> Discuss Opportunities
                         </a>
-                        <a href="#" class="btn btn-outline">
+                        <a href="assets/satocv.docx" class="btn btn-outline">
                             <i class="fas fa-download"></i> Download Resume
                         </a>
                     </div>
@@ -1481,6 +1481,10 @@
                 <div>
                     <h4>Email</h4>
                     <p>satojohn861@gmail.com</p>
+                </div>
+                <div>
+                    <h4>Phone</h4>
+                    <p>0793752591 / 0746705746</p>
                 </div>
             </div>
             
@@ -1525,32 +1529,39 @@
     </div>
     
     <div class="contact-form">
-        <form id="contactForm">
-            <div class="form-group">
-                <label for="name">Your Name</label>
-                <input type="text" id="name" class="form-control" required>
-            </div>
-            
-            <div class="form-group">
-                <label for="email">Email Address</label>
-                <input type="email" id="email" class="form-control" required>
-            </div>
-            
-            <div class="form-group">
-                <label for="subject">Subject</label>
-                <input type="text" id="subject" class="form-control" required>
-            </div>
-            
-            <div class="form-group">
-                <label for="message">Message</label>
-                <textarea id="message" class="form-control" rows="4" required></textarea>
-            </div>
-            
-            <button type="submit" class="btn btn-primary">
-                <i class="fas fa-paper-plane"></i> Send Message
-            </button>
-        </form>
-    </div>
+    <form action="https://formspree.io/f/mgozlzgb" method="POST">
+        
+        <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" class="form-control" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" class="form-control" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" class="form-control" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" class="form-control" rows="4" required></textarea>
+        </div>
+
+        <!-- Anti-spam -->
+        <input type="text" name="_gotcha" style="display:none">
+
+        <!-- Redirect after submit (optional) -->
+        <input type="hidden" name="_next" value="https://TheBoss7660.github.io/thank-you.html">
+
+        <button type="submit" class="btn btn-primary">
+            <i class="fas fa-paper-plane"></i> Send Message
+        </button>
+    </form>
+</div>
 </div>
         </div>
     </section>
